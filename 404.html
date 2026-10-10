@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050505">
+<meta name="robots" content="noindex">
+<title>Page introuvable · La jefa</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%23050505%27%2F%3E%3Cdefs%3E%3CradialGradient%20id%3D%27g%27%20cx%3D%2736%25%27%20cy%3D%2730%25%27%20r%3D%2775%25%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23F3DC9B%27%2F%3E%3Cstop%20offset%3D%27.55%27%20stop-color%3D%27%23C9A45C%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%236E5528%27%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2732%27%20r%3D%2717%27%20fill%3D%27url%28%23g%29%27%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:dark;--ink:#050505;--paper:#F5F5F5;--mute:#B8B8B8;--gold:#C9A45C;--gold2:#E3C77A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px;background:var(--ink);color:var(--paper);font:400 17px/1.55 'Hanken Grotesk','Helvetica Neue',Arial,sans-serif}
+main{width:100%;max-width:520px;text-align:center}
+p.k{margin:0 0 18px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+h1{margin:0 0 14px;font:600 clamp(32px,8vw,48px)/1.08 'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;letter-spacing:-.02em}
+p.t{margin:0 0 32px;color:var(--mute)}
+a.b{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;border-radius:999px;background:var(--paper);color:var(--ink);font-weight:600;text-decoration:none}
+a.b:hover{background:var(--gold2)}
+a.b:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+<p class="k">Erreur 404</p>
+<h1>Cette page n’existe pas.</h1>
+<p class="t">Le lien est peut-être ancien, ou l’adresse mal écrite. Le site, lui, est toujours là.</p>
+<a class="b" id="home" href="/">Revenir à l’accueil</a>
+</main>
+<script>
+/* Chemin de l'accueil. Site de projet GitHub Pages (utilisateur.github.io/nom-du-depot/) : on déduit le dossier du depot.
+   Si ton dépôt s'appelle « utilisateur.github.io », ou si tu utilises un domaine perso, remplace par : var BASE='/'; */
+var BASE='';
+(function(){
+  var p=location.pathname.split('/').filter(Boolean);
+  var b=BASE||((/\.github\.io$/.test(location.hostname)&&p.length)?'/'+p[0]+'/':'/');
+  document.getElementById('home').setAttribute('href',b);
+})();
+</script>
+</body>
+</html>
